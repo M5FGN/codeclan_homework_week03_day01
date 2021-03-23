@@ -2,7 +2,10 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Roboto Slab', serif;
 }
 
@@ -10,28 +13,48 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-main {
-    width: 90%;
-    margin: auto;
-}
 
 header {
     background-color: dodgerblue;
+    display: flex;
 }
 
-header > div > h1 {
-    margin-top: 0;  
+#hd-right {
+    width: 50%;
+    align-content: flex-end;
+    text-align: right;
+    padding: 20px;
+}
+
+#hd-left {
+    width: 50%;
+    padding: 30px 0;
+}
+
+header>div>h1 {
+    margin-top: 0;
     color: white;
-    padding: 20px 0px 0px 90px;
+    padding: 0px 0px 0px 70px;
 }
 
-
-header > div > nav > ul {
+header>div>nav>ul {
     list-style: none;
 }
 
-header > div > nav > ul > li {
+header>div>nav>ul>li {
     display: inline;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+header>div>nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    width: 90%;
+    margin: auto;
 }
 
 #left {
@@ -60,6 +83,16 @@ article {
     padding-top: 50px;
 }
 
+#comm-frm {
+    text-align: right;
+}
+
+#comm-frm input[type=text] {
+    width: 100%;
+    height: 150px;
+}
+
+
 .comm-img {
     width: 80px;
     height: 80px;
@@ -75,7 +108,7 @@ footer {
 
 }
 
-footer > p {
+footer>p {
     font-size: 16px;
     color: white;
     padding: 20px;
@@ -87,6 +120,4 @@ footer > p {
 
 /* TODO */
 
-/* Positioning on Header */
 /* Comments Submit Button - move to right */
-
